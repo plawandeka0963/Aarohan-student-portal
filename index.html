@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="as">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123b35">
+<meta name="description" content="আৰোহণ — ষষ্ঠৰ পৰা দশম শ্ৰেণীৰ অসমীয়া মাধ্যমৰ বিনামূলীয়া অধ্যয়ন পৰ্টেল।">
+<title>আৰোহণ | শিক্ষাৰ্থীৰ অধ্যয়ন পৰ্টেল</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Assamese:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">আ</span><span><b>আৰোহণ</b><small>জ্ঞানৰ দিশে এখোজ</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="মেনু">☰</button>
+  <nav id="nav"><a href="#classes">শ্ৰেণী</a><a href="#resources">পঢ়া-সামগ্ৰী</a><a href="#about">আমাৰ বিষয়ে</a><button class="admin-link" id="adminOpen">এডমিন</button></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow">অসমীয়া মাধ্যম · SEBA / অসম ৰাজ্যিক পাঠ্যক্ৰম</span>
+  <h1>শিকোঁ আহক,<br><em>আগুৱাই যাওঁ।</em></h1>
+  <p>ষষ্ঠৰ পৰা দশম শ্ৰেণীলৈকে টোকা, প্ৰশ্নোত্তৰ আৰু অনুশীলনী — সকলো একে ঠাইতে, সম্পূৰ্ণ বিনামূলীয়া।</p>
+  <div class="hero-actions"><a class="btn primary" href="#classes">পঢ়া আৰম্ভ কৰক <span>→</span></a><a class="btn ghost" href="#resources">সামগ্ৰী চাওক</a></div>
+  <div class="hero-note"><span class="dot"></span> কোনো ছাত্ৰ-লগইনৰ প্ৰয়োজন নাই</div></div>
+  <div class="hero-art"><div class="sun"></div><div class="book book-back"></div><div class="book book-front"><span>আ</span><small>জ্ঞান · অনুশীলন · সফলতা</small></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="art-caption">প্ৰতিদিনে অলপকৈ, সফলতা নিশ্চিতকৈ।</div></div>
+</section>
+<section class="stats"><div><b>০৬–১০</b><span>শ্ৰেণী</span></div><div><b>অসমীয়া</b><span>শিক্ষাৰ মাধ্যম</span></div><div><b>১০০%</b><span>বিনামূলীয়া</span></div><div><b>২৪ × ৭</b><span>পঢ়াৰ সুবিধা</span></div></section>
+<section class="section" id="classes"><div class="section-head"><div><span class="eyebrow">আপোনাৰ শ্ৰেণী বাছনি কৰক</span><h2>কোন শ্ৰেণীত পঢ়ে?</h2></div><p>শ্ৰেণী বাছি লৈ বিষয় আৰু অধ্যায় অনুসৰি সামগ্ৰী বিচাৰক।</p></div><div class="class-grid" id="classGrid"></div></section>
+<section class="section resource-section" id="resources"><div class="section-head"><div><span class="eyebrow">অধ্যয়ন সামগ্ৰী</span><h2>আপোনাৰ প্ৰয়োজনীয় বস্তু বিচাৰক</h2></div></div>
+<div class="filters"><label class="searchbox">⌕ <input id="search" placeholder="অধ্যায়, বিষয় বা প্ৰশ্ন বিচাৰক..."></label><select id="filterClass"><option value="">সকলো শ্ৰেণী</option></select><select id="filterType"><option value="">সকলো সামগ্ৰী</option><option value="note">অধ্যায়ৰ টোকা</option><option value="qa">প্ৰশ্নোত্তৰ</option><option value="mcq">MCQ অনুশীলন</option></select></div>
+<div class="resource-grid" id="resourceGrid"><div class="empty">সামগ্ৰী লোড হৈ আছে...</div></div><p class="small-note">নতুন সামগ্ৰী এডমিনে প্ৰকাশ কৰাৰ লগে লগে ইয়াত দেখা যাব।</p></section>
+<section class="section practice" id="practice"><div><span class="eyebrow">নিজকে পৰীক্ষা কৰক</span><h2>অনুশীলনেই আত্মবিশ্বাস বঢ়ায়।</h2><p>বিষয়ভিত্তিক MCQ সমাধান কৰক আৰু লগে লগে নিজৰ নম্বৰ জানক।</p></div><a class="btn light" href="#resources" onclick="document.getElementById('filterType').value='mcq';window.dispatchEvent(new Event('aarohan-filter'))">MCQ আৰম্ভ কৰক →</a></section>
+<section class="section about" id="about"><span class="eyebrow">আৰোহণৰ লক্ষ্য</span><h2>প্ৰতিজন শিক্ষাৰ্থীৰ বাবে সহজ শিক্ষা।</h2><p>আৰোহণ হৈছে অসমীয়া মাধ্যমৰ শিক্ষাৰ্থীৰ বাবে এখন সহজ, বিনামূলীয়া অনলাইন অধ্যয়ন মঞ্চ। ইয়াৰ লক্ষ্য হৈছে পাঠ্যক্ৰম বুজিবলৈ সহায় কৰা, পৰীক্ষাৰ প্ৰস্তুতি সহজ কৰা আৰু অনুশীলনৰ সুযোগ প্ৰদান কৰা।</p><div class="disclaimer">শিক্ষাৰ্থীসকলে নিজৰ বিদ্যালয়ৰ শেহতীয়া পাঠ্যক্ৰম আৰু শিক্ষকৰ নিৰ্দেশনাৰ সৈতে এই সামগ্ৰী মিলাই ল’ব।</div></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">আ</span><span><b>আৰোহণ</b><small>জ্ঞানৰ দিশে এখোজ</small></span></a><span>© <span id="year"></span> আৰোহণ · শিক্ষাৰ্থীৰ বাবে বিনামূলীয়া</span></footer>
+
+<div class="modal" id="contentModal" aria-hidden="true"><div class="modal-card wide"><button class="close" data-close>×</button><div id="contentBody"></div></div></div>
+<div class="modal" id="adminModal" aria-hidden="true"><div class="modal-card"><button class="close" data-close>×</button><div id="adminBody"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="/app.js"></script>
+</body></html>
