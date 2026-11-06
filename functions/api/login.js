@@ -1,4 +1,3 @@
-export async function onRequestPost({ request, env }) { try { const { username, password } = await request.json();
 if (!username || !password) {
   return Response.json(
     { error: "Username and password required" },
@@ -25,4 +24,3 @@ return Response.json({
     role: user.role
   }
 });
-} catch (error) { return Response.json( { error: "Login failed" }, { status: 500 } ); } }
