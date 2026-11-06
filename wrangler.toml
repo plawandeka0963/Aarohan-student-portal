@@ -1,9 +1,1 @@
-name = "aarohan-student-portal"
-compatibility_date = "2026-11-04"
-pages_build_output_dir = "."
-
-[[d1_databases]]
-binding = "DB"
-database_name = "aarohan-content"
-database_id = "YOUR_ACTUAL_DATABASE_ID"
-migrations_dir = "migrations"
+06b75e7f-cdb1-4e9b-aec2-7581f7e42d1e
