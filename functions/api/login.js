@@ -7,7 +7,9 @@ if (!username || !password) {
 
 const user = await env.DB.prepare(
   "SELECT id, username, password_hash, role FROM users WHERE username = ?"
-).bind(username).first();
+)
+  .bind(username)
+  .first();
 
 if (!user || user.password_hash !== password) {
   return Response.json(
